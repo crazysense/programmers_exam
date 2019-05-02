@@ -76,13 +76,13 @@ public class DurablePriorityQueue {
 
         int deleteMin() {
             if (p == 0) return 0;
-            int parent = 0;
-            int left = p * 2 + 1;
-            int rifht = p * 2 + 2;
-
-            int idx
-            if(left < p)
-
+//            int parent = 0;
+//            int left = p * 2 + 1;
+//            int rifht = p * 2 + 2;
+//
+//            int idx
+//            if(left < p)
+//
             return heap[--p];
         }
 
