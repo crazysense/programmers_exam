@@ -19,8 +19,8 @@ public class Dijkstra {
         g.addSimple(3, 8, 3);
         g.addSimple(6, 8, 2);
 
-//        System.out.println(g.dijkstra(1, 8));
-        System.out.println(g.shortestPath(1, 8));
+        System.out.println(g.dijkstra(1, 8));
+//        System.out.println(g.shortestPath(1, 8));
 
         System.out.println("===============");
 
@@ -123,10 +123,11 @@ public class Dijkstra {
                             q.add(new Pair<>(next, dist[next]));
                         }
                     }
-//                    System.out.print("dist : ");
-//                    for (int i = 1; i < dist.length; i++) {
-//                        System.out.print(dist[i] + " ");
-//                    }
+                    System.out.print("dist : ");
+                    for (int i = 1; i < dist.length; i++) {
+                        System.out.print(dist[i] + " ");
+                    }
+                    System.out.println();
 //                    System.out.print("\ntrack : ");
 //                    for (int i = 1; i < track.length; i++) {
 //                        System.out.print(track[i] + " ");

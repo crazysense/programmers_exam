@@ -37,6 +37,23 @@ public class DeleteDuplicate {
         sol02.deleteDuplicate(n);
 
         Node.printNode(n);
+
+        // init
+        n = new Node(1);
+        n.add(2);
+        n.add(3);
+        n.add(4);
+        n.add(2);
+        n.add(5);
+        n.add(1);
+        n.add(6);
+
+        Node.printNode(n);
+
+        Solution03 sol03 = new Solution03();
+        sol03.deleteDuplicate(n);
+
+        Node.printNode(n);
     }
 
     // With Buffer
@@ -76,6 +93,24 @@ public class DeleteDuplicate {
                     prev = cur;
                     cur = cur.next;
                 }
+            }
+        }
+    }
+
+    // Without Buffer.
+    static class Solution03 {
+        void deleteDuplicate(Node head) {
+            Node cur = head;
+            while (cur != null) {
+                Node finder = cur;
+                while (finder.next != null) {
+                    if (finder.next.data == cur.data) {
+                        finder.next = finder.next.next;
+                    } else {
+                        finder = finder.next;
+                    }
+                }
+                cur = cur.next;
             }
         }
     }

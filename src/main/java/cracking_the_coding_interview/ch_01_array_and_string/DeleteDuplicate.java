@@ -7,7 +7,8 @@ import java.util.Map;
 public class DeleteDuplicate {
 
     public static void main(String[] args) {
-        char[] str = new char[]{'a', 'b', 'c', 'a', 'c', 'd'};
+//        char[] str = new char[]{'a', 'b', 'c', 'a', 'c', 'd'};
+        char[] str = new char[]{'a', 'a', 'a', 'a', 'b', 'b'};
 
         System.out.println(Arrays.toString(str));
 
@@ -34,9 +35,8 @@ public class DeleteDuplicate {
 
     // No (Large) Additional Memory.
     static void removeDuplicates01(char[] str) {
-        if (str == null) return;
+        if (str == null || str.length < 2) return;
         int len = str.length;
-        if (len < 2) return;
 
         int tail = 1;
 
