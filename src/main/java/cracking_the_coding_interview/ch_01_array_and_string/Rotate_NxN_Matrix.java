@@ -85,8 +85,8 @@ public class Rotate_NxN_Matrix {
                 int target = n - x - 1;
                 for (int y = x, z = 0; y < target; y++, z++) {
                     char tmp = matrix[x][y];
-                    matrix[x][y] = matrix[target - y][x];
-                    matrix[target - y][x] = matrix[target][target - z];
+                    matrix[x][y] = matrix[target - z][x];
+                    matrix[target - z][x] = matrix[target][target - z];
                     matrix[target][target - z] = matrix[y][target];
                     matrix[y][target] = tmp;
                 }
