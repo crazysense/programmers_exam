@@ -1,10 +1,10 @@
 public class HeightsOfBinaryTree {
-    static class Node {
+    public static class Node {
         Node left;
         Node right;
         int data;
 
-        Node(int data) {
+        public Node(int data) {
             this.data = data;
             left = null;
             right = null;
@@ -12,14 +12,15 @@ public class HeightsOfBinaryTree {
     }
 
     public static int height(Node root) {
+        if (root == null) return 0;
         return heightHelper(root, 0);
     }
 
     public static int heightHelper(Node n, int level) {
-        if (n == null) return 0;
-        int left = Math.max(level, heightHelper(n.left, level + 1));
-        int right = Math.max(level, heightHelper(n.right, level + 1));
-        return Math.max(left, right);
+        if (n == null) return level - 1;
+        int left = heightHelper(n.left, level + 1);
+        int right = heightHelper(n.right, level + 1);
+        return left > right ? left : right;
     }
 
     public static Node insert(Node root, int data) {
