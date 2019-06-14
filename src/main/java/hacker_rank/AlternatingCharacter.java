@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class AlternatingCharacter {
     static int alternatingCharacters(String s) {
         int len = s.length();

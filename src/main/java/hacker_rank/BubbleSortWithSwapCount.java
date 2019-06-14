@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class BubbleSortWithSwapCount {
     static void countSwaps(int[] a) {
         int cnt = 0;

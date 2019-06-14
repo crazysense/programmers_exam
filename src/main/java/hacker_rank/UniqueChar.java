@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class UniqueChar {
     public static void main(String[] args) {
         String v1 = "abcdefghijklmn";

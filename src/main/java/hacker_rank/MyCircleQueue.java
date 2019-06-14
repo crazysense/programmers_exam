@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class MyCircleQueue {
     private Object[] q;
     private int front = 0, rear = 0;

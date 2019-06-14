@@ -1,3 +1,5 @@
+package hacker_rank;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 

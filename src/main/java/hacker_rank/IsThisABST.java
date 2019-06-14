@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class IsThisABST {
     static boolean checkBST(HeightsOfBinaryTree.Node root) {
         return checkBSTHelper(root, Integer.MIN_VALUE, Integer.MAX_VALUE);

@@ -1,4 +1,6 @@
-public class DoubleyLinkedListNodeTest2 {
+package hacker_rank;
+
+public class DoubleyLinkedListNodeTest {
     static class DoublyLinkedListNode {
         public int data;
         public DoublyLinkedListNode next;
@@ -34,38 +36,36 @@ public class DoubleyLinkedListNodeTest2 {
         }
     }
 
-    static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
-        DoublyLinkedListNode front = head;
-        DoublyLinkedListNode rear = head;
-        int size = 1;
-        while (rear.next != null) {
-            rear = rear.next;
-            size++;
+    static DoublyLinkedListNode sortedInsert(DoublyLinkedListNode head, int data) {
+        if (head == null) {
+            return new DoublyLinkedListNode(data);
         }
 
-        for (int i = 0; i < size / 2; i++) {
-            int tmp = front.data;
-            front.data = rear.data;
-            rear.data = tmp;
+        DoublyLinkedListNode cur = head;
+        DoublyLinkedListNode prev = head;
+        while (cur != null && cur.data < data) {
+            prev = cur;
+            cur = cur.next;
+        }
 
-            front = front.next;
-            rear = rear.prev;
+        DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
+        if (prev == cur) {
+            newNode.prev = prev.prev;
+            newNode.next = prev;
+            prev.prev = newNode;
+            if (newNode.prev != null) {
+                newNode.prev.next = newNode;
+            }
+        } else {
+            newNode.next = prev.next;
+            newNode.prev = prev;
+            prev.next = newNode;
+            if (newNode.next != null) {
+                newNode.next.prev = newNode;
+            }
         }
 
         return head;
-    }
-
-    static DoublyLinkedListNode reverse2(DoublyLinkedListNode head) {
-        DoublyLinkedListNode temp = head;
-        DoublyLinkedListNode newHead = head;
-        while (temp != null) {
-            DoublyLinkedListNode prev = temp.prev;
-            temp.prev = temp.next;
-            temp.next = prev;
-            newHead = temp;
-            temp = temp.prev;
-        }
-        return newHead;
     }
 
     static void print(DoublyLinkedListNode head) {
@@ -77,29 +77,16 @@ public class DoubleyLinkedListNodeTest2 {
         System.out.println();
     }
 
-    static void print2(DoublyLinkedListNode head) {
-        DoublyLinkedListNode node = head;
-        while (node.next != null) {
-            node = node.next;
-        }
-        while (node != null) {
-            System.out.print(node.data + " ");
-            node = node.prev;
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
         DoublyLinkedList test = new DoublyLinkedList();
-        test.insertNode(1);
         test.insertNode(2);
         test.insertNode(3);
         test.insertNode(4);
 
         print(test.head);
 
-        print(reverse(test.head));
+        sortedInsert(test.head, 1);
 
-        print(reverse2(test.head));
+        print(test.head);
     }
 }

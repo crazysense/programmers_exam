@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class BinarySearchTree<T extends Comparable<T>> {
     private T data;
     private BinarySearchTree<T> left;

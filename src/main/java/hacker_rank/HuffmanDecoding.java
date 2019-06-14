@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class HuffmanDecoding {
     abstract class Node implements Comparable<Node> {
         public  int frequency; // the frequency of this tree

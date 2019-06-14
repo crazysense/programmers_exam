@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class CompressionCount {
     public static void main(String[] args) {
         String s1 = "abcdaaabbbcccddddddeeeeeeffffff";

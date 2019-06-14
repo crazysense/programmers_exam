@@ -1,3 +1,5 @@
+package hacker_rank;
+
 public class LuckBalance {
     static int luckBalance(int k, int[][] contests) {
         int luck = 0;
