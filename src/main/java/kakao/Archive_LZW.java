@@ -4,10 +4,13 @@ import java.util.*;
 
 public class Archive_LZW {
     public static void main(String[] args) {
+        Map<Integer, Integer> m = null;
+
         System.out.println(Arrays.toString(archive("KAKAO")));
         System.out.println(Arrays.toString(archive("TOBEORNOTTOBEORTOBEORNOT")));
         System.out.println(Arrays.toString(archive("ABABABABABABABAB")));
     }
+
 
     static int[] archive(String input) {
         Map<String, Integer> dict = new HashMap<>();
@@ -15,7 +18,6 @@ public class Archive_LZW {
         for (int c = 'A'; c <= 'Z'; c++) {
             dict.put(Character.toString((char) c), idx++);
         }
-
 
 
         int[] index = new int[500];
