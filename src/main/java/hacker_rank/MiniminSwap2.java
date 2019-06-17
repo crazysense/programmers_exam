@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 정렬하기 위한 최소 스왑 횟수 구하기
+// 데이터는 순차적으로 모두 있다고 가정한다. (중간에 빠진 데이터는 없음)
 public class MiniminSwap2 {
     static int minimumSwaps(int[] arr) {
         int len = arr.length;

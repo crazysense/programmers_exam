@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// 중복문자제거
 public class DeleteDuplicate {
 
     public static void main(String[] args) {

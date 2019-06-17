@@ -2,6 +2,7 @@ package exam;
 
 import java.util.Arrays;
 
+// 가장 큰 숫자
 public class BiggestNumber {
     public static void main(String[] args) {
 //        System.out.println(solution1(new int[]{6, 10, 2}));

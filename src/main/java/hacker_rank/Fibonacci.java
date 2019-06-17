@@ -2,6 +2,7 @@ package hacker_rank;
 
 import java.util.Arrays;
 
+// 피보나치 수열
 public class Fibonacci {
     static long fibonacci(int n) {
         if (n < 2) {

@@ -2,6 +2,10 @@ package hacker_rank;
 
 import java.util.HashMap;
 
+// 문자의 횟수
+// 각 문자의 출현 횟수가 동일한지 확인한다.
+// 단, 오로지 딱 하나의 문자를 삭제할 수 있다.
+
 public class SherlockAndTheValidString {
     static String isValid(String s) {
         int[] word = new int[26];
@@ -37,5 +41,6 @@ public class SherlockAndTheValidString {
 
     public static void main(String[] args) {
         System.out.println(isValid("aabbcd"));
+        System.out.println(isValid("aabbcc"));
     }
 }

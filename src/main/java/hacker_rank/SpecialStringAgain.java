@@ -5,13 +5,17 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+// 모든 문자가 동일하거나
+// 가운데 하나만 제외하고 모든 문자와 길이가 동일한 문자 (미러) 의 출현 횟수를 구하라
+
 public class SpecialStringAgain {
     public static void main(String[] args) throws IOException {
         List<String> s = Files.readAllLines(Paths.get("/Users/myyuk/Development/github/programmers_exam/src/main/resources/specialstringagain_test"));
         long res = subStringCount(s.get(1), Integer.parseInt(s.get(0)));
         System.out.print(res + " : ");
         System.out.println(1272919L == res);
-//        System.out.println(subStringCount("aaaa", 4));
+
+        System.out.println(subStringCount("mnonopoo", 7));
     }
 
     static long subStringCount(String s, int n) {

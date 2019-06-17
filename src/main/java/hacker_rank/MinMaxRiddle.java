@@ -5,11 +5,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+// 윈도우
+// 1 부터 n 까지의 윈도우를 생성하고 각 윈도우의 최소값을 구하고 그 중에서 최대값을 구하라.
+
 public class MinMaxRiddle {
     public static void main(String[] args) throws IOException {
-        List<String> s = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\minmaxriddle_test"));
-        long[] arr = Arrays.stream(s.get(0).split("\\s+")).mapToLong(Long::valueOf).toArray();
-//        long[] arr = new long[]{3, 5, 4, 7, 6, 2};
+//        List<String> s = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\minmaxriddle_test"));
+//        long[] arr = Arrays.stream(s.get(0).split("\\s+")).mapToLong(Long::valueOf).toArray();
+        long[] arr = new long[]{3, 5, 4, 7, 6, 2};
         long start = System.currentTimeMillis();
         System.out.println(Arrays.toString(riddle(arr)));
         long end = System.currentTimeMillis();

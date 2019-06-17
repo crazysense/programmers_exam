@@ -6,13 +6,15 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
+// 배열의 최대 합계 구하기
+// DP
 public class MaxArraySum {
     public static void main(String[] args) throws IOException {
-        List<String> s = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\maxarraysum_test"));
-        int[] arr = Arrays.stream(s.get(0).split("\\s+")).mapToInt(Integer::valueOf).toArray();
+//        List<String> s = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\maxarraysum_test"));
+//        int[] arr = Arrays.stream(s.get(0).split("\\s+")).mapToInt(Integer::valueOf).toArray();
 
 
-        arr = new int[] {-1,-2,-3,-5,10};
+        int[] arr = new int[] {-1,-2,-3,-5,10};
         int res = maxArraySum(arr);
         System.out.println(res);
 //        System.out.println(res == 76497274);

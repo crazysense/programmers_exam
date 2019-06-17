@@ -2,6 +2,8 @@ package hacker_rank;
 
 import java.util.Stack;
 
+// Histogram
+// 연결된 가장 큰 사각형의 넓이 구하기 (히스토그램)
 public class LargestRectangle {
 
     static long largestRectangle(int[] h) {
@@ -15,7 +17,6 @@ public class LargestRectangle {
             } else if (h[pos] < hStack.peek()) {
                 int pTemp = pStack.peek();
                 while (!hStack.isEmpty() && h[pos] < hStack.peek()) {
-                    pTemp = pStack.peek();
                     max = Math.max(max, calcMax(pStack, hStack, pos));
                 }
                 hStack.push(h[pos]);

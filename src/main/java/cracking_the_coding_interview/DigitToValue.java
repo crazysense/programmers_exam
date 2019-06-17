@@ -1,5 +1,6 @@
 package cracking_the_coding_interview;
 
+// 2진수를 10진수로
 public class DigitToValue {
     public static void main(String[] args) {
         String s1 = "1000";

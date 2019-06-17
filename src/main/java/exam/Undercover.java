@@ -3,6 +3,7 @@ package exam;
 import java.util.HashMap;
 import java.util.Map;
 
+// 변장할수 있는 확률
 public class Undercover {
     public static void main(String[] args) {
         String[][] clothes = new String[][]{

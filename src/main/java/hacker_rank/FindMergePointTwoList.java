@@ -3,6 +3,7 @@ package hacker_rank;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
+// 두 개의 연결리스트가 합쳐지는 곳 계산하기
 public class FindMergePointTwoList {
     static class SinglyLinkedListNode {
         public int data;

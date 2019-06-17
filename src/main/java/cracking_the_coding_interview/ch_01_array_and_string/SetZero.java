@@ -2,6 +2,8 @@ package cracking_the_coding_interview.ch_01_array_and_string;
 
 import java.util.Arrays;
 
+// 배열바꾸기
+// 행열
 public class SetZero {
     public static void main(String[] args) {
         int[][] matrix = new int[][]{

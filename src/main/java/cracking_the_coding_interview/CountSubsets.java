@@ -3,6 +3,7 @@ package cracking_the_coding_interview;
 import java.util.HashMap;
 import java.util.Map;
 
+// 서브셋 개수
 public class CountSubsets {
     public static void main(String[] args) {
         Map<String, Integer> memo = new HashMap<>();

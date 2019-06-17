@@ -2,6 +2,7 @@ package cracking_the_coding_interview.ch_02_linked_list;
 
 import java.util.Stack;
 
+// 리스트 뒤에서 n번째
 public class NthToLast {
     public static void main(String[] args) {
         Node n = new Node(1);

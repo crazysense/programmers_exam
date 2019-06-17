@@ -5,6 +5,15 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 
+// DFS
+// 각 도시에 도서관을 짓거나 도로를 짓거나 해야 하는데
+// 모든 도시에서 도서관을 이용할 수 있는 최소한의 비용을 구하라
+
+// 도서관을 짓는 비용 : c_lib
+// 도로를 짓는 비용 : c_road
+// n : 도시의 개수
+// m : 도로의 개수
+
 public class RoadsAndLibraries {
 
     static class Graph {
@@ -95,7 +104,8 @@ public class RoadsAndLibraries {
     }
 
     static int[][] testcase1() throws IOException {
-        List<String> list = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\roadsandlibraries_test"));
+//        List<String> list = Files.readAllLines(Paths.get("D:\\development\\projects\\programmers-exam\\src\\main\\resources\\roadsandlibraries_test"));
+        List<String> list = Files.readAllLines(Paths.get("/Users/myyuk/Development/github/programmers_exam/src/main/resources/roadsandlibraries_test"));
         int[][] res = new int[list.size()][];
         for (int i = 0; i < res.length; i++) {
             String[] s = list.get(i).split("\\s+");

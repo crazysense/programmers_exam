@@ -1,5 +1,7 @@
 package cracking_the_coding_interview.ch_02_linked_list;
 
+// 연결리스트 계산
+// 링크드리스트 계산
 public class AddLists {
     public static void main(String[] args) {
         Node n1 = new Node(3);

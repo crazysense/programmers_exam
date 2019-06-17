@@ -1,5 +1,7 @@
 package exam;
 
+// i 부터 j 까지 자르고 정렬했을 때 k번째 숫자
+// i 는 1부터 시작
 public class KthNumber {
     public static void main(String[] args) {
         System.out.println(ktnNumber(new int[]{1, 5, 2, 6, 3, 7, 4}, 2, 5, 3));

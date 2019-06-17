@@ -3,6 +3,10 @@ package heap;
 import java.util.ArrayList;
 import java.util.List;
 
+// 최소 힙 구현
+// (삭제시) 왼쪽 자식 = p * 2 + 1
+// (삭제시) 오른쪽 자식 = p * 2 + 1
+// (삽입시) 부모 = (p - 1) / 2
 public class MinHeap {
     public static class MinHeapStruct {
         List<Integer> heap;

@@ -1,6 +1,8 @@
 package hacker_rank;
 
-public class DoubleyLinkedListNodeTest {
+// 이중 연결리스트 정렬 삽입
+// 삽입하면서 정렬
+public class DoublyLinkedListNodeTest {
     static class DoublyLinkedListNode {
         public int data;
         public DoublyLinkedListNode next;

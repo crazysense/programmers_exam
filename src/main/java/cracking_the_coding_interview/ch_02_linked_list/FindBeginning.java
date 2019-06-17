@@ -1,5 +1,7 @@
 package cracking_the_coding_interview.ch_02_linked_list;
 
+// 두개의 순환리스트가 만나는곳
+// 서클
 public class FindBeginning {
     public static void main(String[] args) {
         Node n = new Node(1);

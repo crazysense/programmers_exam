@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 문자의 중복이 있는지 검사한다.
+
 public class UniqueChar {
     public static void main(String[] args) {
         String v1 = "abcdefghijklmn";

@@ -1,5 +1,6 @@
 package cracking_the_coding_interview.bitwise;
 
+// 2진수변환
 public class PrintBinary {
     public static void main(String[] args) {
         System.out.println(printBinary(0.625));

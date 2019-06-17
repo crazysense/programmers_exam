@@ -4,6 +4,7 @@ import javafx.util.Pair;
 
 import java.util.*;
 
+// 최단거리 1
 public class Dijkstra {
     public static void main(String[] args) {
         Graph g = new Graph();

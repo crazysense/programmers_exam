@@ -1,10 +1,12 @@
 package hacker_rank;
 
+// 허프만 디코딩
 public class HuffmanDecoding {
     abstract class Node implements Comparable<Node> {
-        public  int frequency; // the frequency of this tree
-        public  char data;
-        public  Node left, right;
+        public int frequency; // the frequency of this tree
+        public char data;
+        public Node left, right;
+
         public Node(int freq) {
             frequency = freq;
         }
@@ -16,8 +18,6 @@ public class HuffmanDecoding {
     }
 
     class HuffmanLeaf extends Node {
-
-
         public HuffmanLeaf(int freq, char val) {
             super(freq);
             data = val;

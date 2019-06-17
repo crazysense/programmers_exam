@@ -1,5 +1,8 @@
 package hacker_rank;
 
+// 대기열에서 순서 바꾸기 (순서를 변경한 횟수)
+// 한 사람은 최대 두번 바꿀 수 있음
+
 public class NewYearChaos {
     public static int solve(int arr[])
     {

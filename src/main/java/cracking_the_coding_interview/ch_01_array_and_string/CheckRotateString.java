@@ -1,5 +1,6 @@
 package cracking_the_coding_interview.ch_01_array_and_string;
 
+// 문자회전
 public class CheckRotateString {
     public static void main(String[] args) {
         String s1 = "erbottlewat";

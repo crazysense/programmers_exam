@@ -2,6 +2,8 @@ package hacker_rank;
 
 import java.util.Arrays;
 
+// 계단을 오르는 경우의 수
+// 1부터 3까지 한번에 오를 수 있음
 public class DavisStaircase {
     static int stepPerms(int n) {
         return stepPerms(null, n);

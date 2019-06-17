@@ -3,6 +3,7 @@ package hacker_rank;
 import java.util.HashMap;
 import java.util.Map;
 
+// 아나그램을 만들기 위해서 삭제해야 할 문자의 개수 (최소)
 public class MakeAnagram {
     static int makeAnagram(String a, String b) {
         HashMap<Character, Integer> aMap = new HashMap<>();

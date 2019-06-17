@@ -2,6 +2,8 @@ package cracking_the_coding_interview.ch_01_array_and_string;
 
 import java.util.Arrays;
 
+// 배열뒤집기
+// 거꾸로
 public class ReverseMatrix {
     public static void main(String[] args) {
         char[][] matrix = new char[][]{

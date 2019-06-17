@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
+// 캔디 최소분배 (잘 모르겠음)
 public class Candies {
     static long candies(int n, int[] arr) {
         if (arr.length == 0) return 0;

@@ -1,5 +1,6 @@
 package cracking_the_coding_interview.ch_02_linked_list;
 
+// 리스트중간노드삭제
 public class DeleteMiddleNode {
     public static void main(String[] args) {
         Node n = new Node(1);

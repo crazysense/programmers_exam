@@ -2,6 +2,9 @@ package hacker_rank;
 
 import java.util.Arrays;
 
+// 소문자는 대문자로 변경 가능
+// 소문자는 삭제 가능
+// a 를 변형한 값이 b 와 같을 수 있는가
 public class Abbreviation {
     static String abbreviation(String a, String b) {
 //        boolean[][] isValid = new boolean[a.length() + 1][b.length() + 1];

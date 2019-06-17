@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 무한히 반복되는 길이 n 의 문자에서 'a' 가 몇 번 나오는지 구하라.
+
 public class RepeatedString {
     // Complete the repeatedString function below.
     static long repeatedString(String s, long n) {

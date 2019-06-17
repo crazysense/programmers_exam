@@ -2,6 +2,9 @@ package hacker_rank;
 
 import java.util.Arrays;
 
+// 아나그램
+// 문자열을 자르고 서로 다른 문자가 쌍이 되는지 찾아야 한다.
+
 public class SherlockAndAnagrams {
     static int sherlockAndAnagrams(String s) {
         int count = 0;

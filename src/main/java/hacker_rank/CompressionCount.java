@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 압축
+// 연속된 문자를 문자 하나와 숫자로 표현
 public class CompressionCount {
     public static void main(String[] args) {
         String s1 = "abcdaaabbbcccddddddeeeeeeffffff";

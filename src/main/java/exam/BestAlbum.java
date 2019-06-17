@@ -2,6 +2,9 @@ package exam;
 
 import java.util.*;
 
+// 베스트 앨범
+// 노래 장르
+// 플레이 횟수
 public class BestAlbum {
 
     public static void main(String[] args) {

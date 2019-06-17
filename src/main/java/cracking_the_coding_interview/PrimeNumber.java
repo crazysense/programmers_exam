@@ -2,6 +2,7 @@ package cracking_the_coding_interview;
 
 import java.util.Arrays;
 
+// 소수 구하기
 public class PrimeNumber {
     public static void main(String[] args) {
         int n = 239847329;

@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 버블정렬
+// 버블소트
 public class BubbleSortWithSwapCount {
     static void countSwaps(int[] a) {
         int cnt = 0;

@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+// k 의 배수를 만족하는 삼중항의 개수
 public class CountTriplets {
 //    static long countTriplets(List<Long> arr, long r) {
 //        HashMap<Long, Long> hash2 = new HashMap<>();
@@ -122,10 +123,11 @@ public class CountTriplets {
 
 //        List<Long> arr = makeData("1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1");
 //        List<Long> arr = makeData(s.get(0));
-        List<Long> arr = makeData("1 3 9 9 27 81");
-        System.out.println(countTriplets(arr, 3));
-        System.out.println(countTriplets2(arr, 3));
-        System.out.println(countTriplets3(arr, 3));
+//        List<Long> arr = makeData("1 3 9 9 27 81");
+        List<Long> arr = makeData("1 2 2 4");
+        System.out.println(countTriplets(arr, 2));
+        System.out.println(countTriplets2(arr, 2));
+        System.out.println(countTriplets3(arr, 2));
     }
 
     static public String getResourceFileAsString(String fileName) {

@@ -1,5 +1,6 @@
 package hacker_rank;
 
+// 이진트리의 높이 (레벨) 구하기
 public class HeightsOfBinaryTree {
     public static class Node {
         Node left;

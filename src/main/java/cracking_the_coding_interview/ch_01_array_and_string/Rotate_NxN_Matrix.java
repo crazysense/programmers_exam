@@ -2,6 +2,8 @@ package cracking_the_coding_interview.ch_01_array_and_string;
 
 import java.util.Arrays;
 
+// 배열회전
+// 90도
 public class Rotate_NxN_Matrix {
     public static void main(String[] args) {
         char[][] matrix = new char[][]{

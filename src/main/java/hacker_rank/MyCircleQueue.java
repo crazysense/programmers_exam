@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// 순환큐
+// 순환 연결리스트
 public class MyCircleQueue {
     private Object[] q;
     private int front = 0, rear = 0;

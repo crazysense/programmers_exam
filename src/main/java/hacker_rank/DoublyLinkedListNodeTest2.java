@@ -1,6 +1,7 @@
 package hacker_rank;
 
-public class DoubleyLinkedListNodeTest2 {
+// 이중 연결리스트 거꾸로 뒤집기
+public class DoublyLinkedListNodeTest2 {
     static class DoublyLinkedListNode {
         public int data;
         public DoublyLinkedListNode next;

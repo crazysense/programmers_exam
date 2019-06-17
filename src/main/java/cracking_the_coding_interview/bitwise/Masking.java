@@ -1,5 +1,6 @@
 package cracking_the_coding_interview.bitwise;
 
+// 비트채우기
 public class Masking {
     public static void main(String[] args) {
         updateBits(toNum("1111011110"), toNum("10011"), 2, 6);

@@ -1,5 +1,11 @@
 package hacker_rank;
 
+// 최대 행운
+// 지면 행운이 그만큼 합산
+// 이기면 행운이 그만큼 차감
+// k : 반드시 이겨야 하는 중요한 콘테스트
+// {LuckPoint, ImportantContest}
+// 중요한 콘테스트는 1, 아니면 0.
 public class LuckBalance {
     static int luckBalance(int k, int[][] contests) {
         int luck = 0;

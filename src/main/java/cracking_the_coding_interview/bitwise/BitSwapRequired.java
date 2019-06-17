@@ -1,7 +1,7 @@
 package cracking_the_coding_interview.bitwise;
 
-import java.util.Arrays;
 
+// 비트
 public class BitSwapRequired {
     public static void main(String[] args) {
         System.out.println(bitSwapRequited(6, 1));

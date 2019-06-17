@@ -1,5 +1,7 @@
 package hacker_rank;
 
+// A 와 B 문자가 제공될때 인접한 문자열이 없도록 변경
+// 문자열에서 삭제한 개수를 리턴
 public class AlternatingCharacter {
     static int alternatingCharacters(String s) {
         int len = s.length();

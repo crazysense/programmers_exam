@@ -1,6 +1,8 @@
 package exam;
 
-public class Test {
+// 이진검색트리
+// 최소 레벨로
+public class MinimumLevelBST {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 

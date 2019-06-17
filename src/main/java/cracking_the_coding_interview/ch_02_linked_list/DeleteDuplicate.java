@@ -3,6 +3,7 @@ package cracking_the_coding_interview.ch_02_linked_list;
 import java.util.HashSet;
 import java.util.Set;
 
+// 리스트중복제거
 public class DeleteDuplicate {
     public static void main(String[] args) {
         Node n = new Node(1);

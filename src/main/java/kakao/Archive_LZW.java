@@ -2,6 +2,7 @@ package kakao;
 
 import java.util.*;
 
+// LZW 압축
 public class Archive_LZW {
     public static void main(String[] args) {
         Map<Integer, Integer> m = null;

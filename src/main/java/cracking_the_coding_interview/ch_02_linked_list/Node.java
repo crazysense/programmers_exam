@@ -1,5 +1,7 @@
 package cracking_the_coding_interview.ch_02_linked_list;
 
+// 연결리스트
+// 링크드리스트
 public class Node {
     Node next = null;
     int data;

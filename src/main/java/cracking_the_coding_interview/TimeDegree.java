@@ -1,5 +1,7 @@
 package cracking_the_coding_interview;
 
+// 시계 각도
+// 시간
 public class TimeDegree {
     public static void main(String[] args) {
         System.out.println(solution(12, 80));

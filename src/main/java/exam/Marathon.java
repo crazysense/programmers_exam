@@ -2,6 +2,7 @@ package exam;
 
 import java.util.Arrays;
 
+// 마라톤 완주한 사람
 public class Marathon {
     public static void main(String[] args) {
         String[] participant = new String[]{
