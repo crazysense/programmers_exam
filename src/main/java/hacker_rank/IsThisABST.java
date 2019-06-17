@@ -1,6 +1,7 @@
 package hacker_rank;
 
 // 이진탐색트리인지 확인하기
+// BST
 public class IsThisABST {
     static boolean checkBST(HeightsOfBinaryTree.Node root) {
         return checkBSTHelper(root, Integer.MIN_VALUE, Integer.MAX_VALUE);

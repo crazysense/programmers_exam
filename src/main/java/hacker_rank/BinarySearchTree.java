@@ -1,6 +1,7 @@
 package hacker_rank;
 
 // 이진탐색트리 구현
+// BST
 public class BinarySearchTree<T extends Comparable<T>> {
     private T data;
     private BinarySearchTree<T> left;
