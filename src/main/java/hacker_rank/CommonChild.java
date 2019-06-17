@@ -24,24 +24,59 @@ public class CommonChild {
     }
 
     static int commonChild2(String s1, String s2) {
-        StringBuilder sb = new StringBuilder();
         int[][] lcs = new int[s1.length() + 1][s2.length() + 1];
         for (int i = 0; i <= s1.length(); i++) {
             for (int j = 0; j <= s2.length(); j++) {
                 if (i == 0 || j == 0) lcs[i][j] = 0;
                 else if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
                     lcs[i][j] = lcs[i - 1][j - 1] + 1;
-                    sb.append(s1.charAt(i-1));
                 } else {
                     lcs[i][j] = Math.max(lcs[i][j - 1], lcs[i - 1][j]);
                 }
             }
         }
-        System.out.println(sb.toString());
         return lcs[s1.length()][s2.length()];
     }
 
-    static void print(int[][] L) {
+    static String commonChild3(String s1, String s2) {
+        int[][] lcs = new int[s1.length() + 1][s2.length() + 1];
+        int[][] sol = new int[s1.length() + 1][s2.length() + 1];
+        for (int i = 0; i <= s1.length(); i++) {
+            for (int j = 0; j <= s2.length(); j++) {
+                if (i == 0 || j == 0) lcs[i][j] = 0;
+                else if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    lcs[i][j] = lcs[i - 1][j - 1] + 1;
+                    sol[i][j] = 1; // same
+                } else {
+                    lcs[i][j] = Math.max(lcs[i][j - 1], lcs[i - 1][j]);
+
+                    if (lcs[i][j] == lcs[i - 1][j]) {
+                        sol[i][j] = 2; // top
+                    } else {
+                        sol[i][j] = 3; // left
+                    }
+                }
+            }
+        }
+
+        int a = s1.length(), b = s2.length();
+        StringBuilder sb = new StringBuilder();
+        while (sol[a][b] != 0) {
+            if (sol[a][b] == 1) {
+                sb.insert(0, s1.charAt(a - 1));
+                a--;
+                b--;
+            } else if (sol[a][b] == 2) {
+                a--;
+            } else { //if (sol[a][b] == 3) {
+                b--;
+            }
+        }
+
+        return sb.toString();
+    }
+
+    static void print(String[][] L) {
         for (int i = 0; i < L.length; i++) {
             System.out.println(Arrays.toString(L[i]));
         }
@@ -57,5 +92,10 @@ public class CommonChild {
 
         System.out.println(commonChild("HARRY", "SALLY"));
         System.out.println(commonChild2("HARRY", "SALLY"));
+
+        System.out.println(commonChild2("HARLY", "HALRY"));
+
+        String res = commonChild3("HARRY", commonChild3("HARLY", "HALRY"));
+        System.out.println(res.length() + " : " + res);
     }
 }
